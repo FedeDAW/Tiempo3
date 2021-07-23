@@ -1,14 +1,25 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { ListadoCiudadesComponent } from './listado-ciudades/listado-ciudades.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FiltroMayusculaPipe } from './pipes/filtro-mayuscula.pipe';
+import { CiudadComponent } from './ciudad/ciudad.component';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListadoCiudadesComponent,
+    FiltroMayusculaPipe,
+    CiudadComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+
+<div class="tempo-cards d-inline-flex p-2" id="tempo-cards">
+  <!-- Tarjetas de los climas solicitados -->
+  <div class="card bg-success bg-gradient">
+    <img class="img-icon rounded mx-auto d-block" src="https://openweathermap.org/img/wn/{{ tiempo.weather[0].icon }}@2x.png"/>
+    <div class="card_body">
+      <h2 class="card-title" id="lugar1">{{tiempo.name}}</h2>
+      <h4 class="card-title" id="description1">{{ tiempo.weather[0].description | filtroMayuscula }}</h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="temperatura1">
+        {{ tiempo.main.temp }} &deg;C / Máx: {{ tiempo.main.temp_max }} / Mín:{{tiempo.main.temp_min}}
+      </li>
+      <li class="list-group-item" id="temperatura1">{{tiempo.main.humidity}} %</li>
+      <li class="list-group-item" id="temperatura1">{{tiempo.wind.speed}} Km/h</li>
+    </ul>
+  </div>
+</div>

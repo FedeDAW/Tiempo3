@@ -1,0 +1,12 @@
+#temperatura, #viento, #humedad{
+  background-color: #ACFFAD;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.img-icon{
+  width: 75px;
+  height: 75px;
+}
